@@ -4,7 +4,6 @@ import './globals.css'
 import { Header } from '@/components/ui/header'
 import { Footer } from '@/components/ui/footer'
 import { ThemeProvider } from 'next-themes'
-import { Navbar } from '@/components/ui/nav'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -18,8 +17,7 @@ export const metadata: Metadata = {
     canonical: '/'
   },
   title: {
-    default: 'Nim - Personal website template',
-    template: '%s | Nim'
+    default: 'Jamie Taylor Resume Website',
   },
   description:  'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
 };
@@ -52,7 +50,6 @@ export default function RootLayout({
         >
           <div className="flex min-h-screen w-full flex-col font-[family-name:var(--font-inter-tight)]">
             <div className="relative mx-auto w-full max-w-screen-sm flex-1 px-4 pt-20">
-              <Navbar />
               <Header />
               {children}
               <Footer />
