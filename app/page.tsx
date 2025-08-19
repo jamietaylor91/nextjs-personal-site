@@ -19,6 +19,7 @@ import {
   EMAIL,
   SOCIAL_LINKS,
 } from './data'
+import DownloadResumeButton from '@/components/ui/download-resume-button'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -141,7 +142,11 @@ Driven by curiosity and a passion for growth. Continuously learning, exploring n
           </p>
         </div>
       </motion.section>
-
+      <motion.section>
+        <div className="flex-1">
+          <DownloadResumeButton />
+        </div>
+      </motion.section>
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
