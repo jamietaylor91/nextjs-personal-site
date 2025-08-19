@@ -1,6 +1,5 @@
-'use client'
-import { TextLoop } from '@/components/ui/text-loop'
-
+"use client";
+import { TextLoop } from "@/components/ui/text-loop";
 
 export function Footer() {
   return (
@@ -9,9 +8,10 @@ export function Footer() {
         <a href="https://github.com/ibelick/nim" target="_blank">
           <TextLoop className="text-xs text-zinc-500">
             <span>© 2025 Jamie Taylor. All rights reserved.</span>
+            <span>Built with Nextjs</span>
           </TextLoop>
         </a>
       </div>
     </footer>
-  )
+  );
 }
