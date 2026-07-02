@@ -2,7 +2,7 @@ type Project = {
   name: string
   description: string
   link: string
-  video: string
+  video?: string
   id: string
 }
 
@@ -11,7 +11,9 @@ type WorkExperience = {
   title: string
   start: string
   end: string
-  link: string
+  link?: string
+  description?: string
+  highlights?: string[]
   id: string
 }
 
@@ -22,48 +24,73 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
+    name: 'SoulStageLA',
     description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+      'A live, audience-powered Los Angeles performance competition where emerging dancers, DJs, and vocal artists compete for cash prizes while fans vote for the winner.',
+    link: 'https://www.soulstagela.com/',
     id: 'project1',
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
+    name: 'MojoDreams',
+    description:
+      'An AI-powered dream journal and self-improvement platform that interprets dream entries, tracks themes, and turns subconscious patterns into practical reflection prompts.',
+    link: 'https://mojodreams.com/',
     id: 'project2',
   },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Cox Automotive',
-    title: 'Software Engineer ll',
-    start: 'September 2020',
+    company: "Taylor'd Works",
+    title: 'Founder & Product Owner',
+    start: '2020',
     end: 'Present',
-    link: 'https://www.coxautoinc.com/',
+    description:
+      'Custom software and AI-integration studio for small businesses; creator of MojoDreams, an AI-powered journaling and self-improvement platform.',
+    highlights: [
+      'Took MojoDreams from concept to launch and grew it to 500 registered users across free users and paying subscribers.',
+      'Owned customer discovery, product strategy, full-stack development, LLM integrations, launch, and go-to-market.',
+      'Improved activation to roughly 63% by redesigning onboarding and the first-entry submission experience.',
+    ],
     id: 'work1',
   },
   {
-    company: 'Oden Industries',
-    title: 'Software Engineer',
-    start: 'March 2016',
-    end: 'October 2020',
-    link: 'https://odenindustries.com/',
+    company: 'DataHealth LLC',
+    title: 'Co-Founder',
+    start: '2020',
+    end: '2022',
+    description: 'Healthcare analytics software company.',
+    highlights: [
+      'Co-founded software that analyzed healthcare reports and SQL code to keep reporting assets current with EPIC database schema changes.',
+      'Identified commonly used tables and columns across EPIC-based reporting to guide datamart design priorities.',
+    ],
     id: 'work2',
   },
   {
-    company: 'Chino Commercial Bank',
-    title: 'Jr Software Engineer',
-    start: 'May 2015',
-    end: 'February 2016',
-    link: 'https://www.chinocommercialbank.com/',
+    company: 'Cox Automotive',
+    title: 'Software Engineer',
+    start: 'Sep 2020',
+    end: 'Mar 2026',
+    link: 'https://www.coxautoinc.com/',
+    highlights: [
+      'Partnered with product managers and stakeholders on the ProfitTime dealer platform to inform roadmap and feature planning.',
+      'Implemented analytics instrumentation and an A/B testing framework, increasing engagement-tracking coverage 15%.',
+      'Built shared React and Stencil component libraries adopted across multiple product teams.',
+    ],
     id: 'work3',
+  },
+  {
+    company: 'Oden Industries',
+    title: 'Software Engineer | Product Owner',
+    start: 'Mar 2016',
+    end: 'Sep 2020',
+    link: 'https://odenindustries.com/',
+    highlights: [
+      'Owned product requirements and backlog priorities for SmartShip, ODS, and PlaniTrac across major product builds.',
+      'Led mobile and desktop development teams while coordinating sprint delivery and release timing.',
+      'Architected and led development of PlaniTrac, a real-time emergency-management platform.',
+    ],
+    id: 'work4',
   },
 ]
 

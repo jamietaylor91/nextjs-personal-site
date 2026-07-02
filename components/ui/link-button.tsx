@@ -25,7 +25,7 @@ const LinkButton = ({
     typeof href === 'string' && /^https?:\/\//i.test(href)
 
   const sharedClass = cn(
-    'inline-flex items-center gap-1.5 text-sm px-3 py-1.5 border border-gray-200 rounded-sm hover:bg-gray-50 transition-colors',
+    'inline-flex items-center gap-1.5 rounded-sm border border-zinc-700 px-3 py-1.5 text-sm text-zinc-100 transition-colors hover:bg-zinc-900',
     className,
   )
 

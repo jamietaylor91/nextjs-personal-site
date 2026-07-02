@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -48,11 +49,12 @@ const SideProject = () => {
 
         <figure className="space-y-3">
           <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900">
-            <img
+            <Image
               src={mojodreamsSnapshot}
               alt="MojoDreams main navigation screen"
+              width={1280}
+              height={720}
               className="h-full w-full object-cover"
-              loading="lazy"
             />
           </div>
           <figcaption className="text-xs uppercase tracking-widest text-slate-400">
